@@ -1,0 +1,53 @@
+@font-face{
+    font-family: "Futura";
+    src: url("https://rawcdn.githack.com/AlainBarrios/Fonts/5981a22fa6ee4a91c0ec1db0893885cfff30f5dd/futura medium bt.ttf?raw=true")
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  canvas{
+    max-width: 100%;
+    display: block;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  #content-canvas {
+    display: inline-block;
+    position: absolute;
+    margin-top: -650px;
+    z-index: -100;
+    left: 100px;
+    height: 1%;
+    margin-left: -700px;
+  }
+  
+  .title{
+    position: absolute;
+    z-index: 10;
+    font-size: 4vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 2vw) );
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1.5rem;
+    padding-left: 1.5rem;
+    font-family: "Futura";
+    font-weight: bold;
+    mix-blend-mode: difference;
+  }
+  
